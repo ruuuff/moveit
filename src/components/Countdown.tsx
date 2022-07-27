@@ -13,10 +13,6 @@ export function Countdown() {
     resetCountdown,
   } = useContext(CountdownContext);
 
-  // String(minutes) - Transforma 'minutes' em string
-  // padStart(2, "0") - Se conter menos que 2 caracteres, ele adiciona '0' no início (padStart)
-  // split("") - Faz um split entre os caracteres
-  // [secondLeft, secondRight] - Desestrutura o array para salvar os valores da esquerda e direita.
   const [minuteLeft, minuteRight] = String(minutes).padStart(2, "0").split("");
   const [secondLeft, secondRight] = String(seconds).padStart(2, "0").split("");
 

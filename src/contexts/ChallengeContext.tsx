@@ -92,8 +92,6 @@ export function ChallengesProvider({
     }
 
     const { amount } = activeChallenge;
-
-    // "let" vem de "let it change" (deixe isso mudar)
     let finalExperience = currentExperience + amount;
 
     if (finalExperience >= experienceToNextLevel) {

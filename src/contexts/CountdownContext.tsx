@@ -46,7 +46,6 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
     setHasFinished(false);
   }
 
-  // Decrementa o countdown
   useEffect(() => {
     if (isActive && time > 0) {
       countdownTimeout = setTimeout(() => {
